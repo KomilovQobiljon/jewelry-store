@@ -1,0 +1,58 @@
+{{ 'style.featured-products.css' | asset_url | stylesheet_tag }}
+
+<div class="featured-products">
+    <div class="products__grid">
+        <h2 class="h2 featured-products__heading">
+            jewelry that not only entices the eye but enchants the soul
+        </h2>
+        {% for block in section.blocks %}
+            <div class="product product--{{forloop.index}}">
+                <img class="product__img" src="{{ block.settings.featured-product.featured_image.src | img_url: '500x780' }}" alt="{{ block.settings.featured-product.featured_image.alt }}">
+                <div class="product__details">
+                    <h3 class="h3 product__title">{{block.settings.featured-product.title}}</h3>
+                    <p class="h4 product__price">{{block.settings.featured-product.price | money }}</p>
+                    <p class="h4 product__collection">new collection</p>
+                </div>
+            </div>  
+        {% endfor %}
+        <div class="products__cta">
+            <a class="products__cta-url h4" src="{{ section.settings.cta_url }}" >{{ section.settings.cta_text }}</a>
+        </div>
+    </div>
+</div>
+<style>
+    .product{
+        background-image: url("{{block.settings.featured-product.featured_image.src}}")
+    }
+</style>
+{% schema %}
+{
+    "name": "t:sections.featured-products.name",
+    "settings":[
+        {
+            "type":"url",
+            "id":"cta_url",
+            "label": "Featured Collection Link"
+        },
+        {
+            "type":"text",
+            "id":"cta_text",
+            "label": "Featured Collection Text"
+        }
+    ],
+    "max_blocks": 4,
+    "blocks": [
+        {
+            "name": "Product",
+            "type": "product",
+            "settings":[
+                {
+                    "type": "product",
+                    "id": "featured-product",
+                    "label": "Featured Product"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

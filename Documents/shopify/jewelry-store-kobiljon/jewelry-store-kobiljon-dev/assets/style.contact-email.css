@@ -1,0 +1,90 @@
+.contact-email{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--color-primary-3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-email__form{
+    width: 67rem;
+    height: 27rem;
+    background-color: var(--color-primary-4);
+    border: 1px solid;
+    border-color: var(--color-primary-1);
+    clip-path: polygon(3% 0%, 97% 0%, 100% 5%, 100% 95%, 97% 100%, 3% 100%, 0% 95%, 0% 5% );
+    overflow: visible;
+}
+.contact-form{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: visible;
+}
+.email{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.email > label{
+    font-family: 'SF New Republic',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 3.4rem;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    width: 60%;
+}
+.email > input{
+    border: none;
+    background-color: transparent;
+    width: 60%;
+    border-bottom: 1px solid;
+    border-color: var(--color-primary-1);
+    padding-bottom: 7px;
+}
+.email input:focus,input:visited{
+    outline: none;
+}
+.email > input::placeholder{
+    font-family: 'SF New Republic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-primary-1);
+    text-align: center;
+}
+.submit{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    z-index: 100;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+    width: 25.3rem;
+    height: 4.4rem;
+    background-color: var(--color-primary-1);
+    text-align: center;
+    color: var(--color-primary-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit > input{
+    border: none;
+    background-color: transparent;
+    color: var(--color-primary-2);
+}

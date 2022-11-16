@@ -1,0 +1,16 @@
+{{ 'style.featured-products.css' | asset_url | stylesheet_tag }}
+<div class="stairs">
+    <img src="{{ section.settings.bg_img.src | img_url: '2880x508' }}" class="stairs__img">
+</div>
+{% schema %}
+{
+    "name": "Background image (Stairs)",
+    "settings":[
+        {
+            "type":"image_picker",
+            "id": "bg_img",
+            "label": "Background image"
+        }
+    ]
+}
+{% endschema %}

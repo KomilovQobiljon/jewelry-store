@@ -1,0 +1,62 @@
+.header{
+    height: calc(100vh - 5rem);
+    background-image: url("https://cdn.shopify.com/s/files/1/0679/0974/6990/files/homepage-hero.png?v=1668493117");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    color: var(--color-primary-2);
+    padding: 5px 3rem 3rem 3rem;
+}
+
+.header__nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.header__ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header__ul:last-child{
+    justify-content: flex-end;
+}
+.header__ul > li:not(:last-child){
+    margin-right: 3rem;
+}
+.header__logo-container{
+    display: flex;
+    justify-content: center;
+}
+.header__logo{
+    width: 14.5rem;
+    height: 8rem;
+}
+.header__center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 8rem);
+}
+.header__center-text{
+    max-width: 66.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.header__center-btn{
+    clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+    width: 25.3rem;
+    height: 4.4rem;
+    background-color: var(--color-primary-2);
+    text-align: center;
+    color: var(--color-primary-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__center-arrow-container{
+    justify-self: flex-end;
+}

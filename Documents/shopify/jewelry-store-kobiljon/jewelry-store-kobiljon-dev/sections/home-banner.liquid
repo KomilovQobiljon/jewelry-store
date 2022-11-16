@@ -1,0 +1,60 @@
+{{ 'style.home-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="home-banner">
+    <div class="home-banner__lines">
+        <span class="home-banner__line-1 home-banner__line "></span>
+        <span class="home-banner__line-2 home-banner__line"></span>
+        <span class="home-banner__line-3 home-banner__line"></span>
+        <span class="home-banner__line-4 home-banner__line"></span>
+        <div class="home-banner__lines-inner">
+            <div class="home-banner__img-container">
+                <img class="home-banner__img" src="{{ section.settings.banner_img.src | img_url: '570x491' }}" alt="{{ section.settings.banner_img_alt }}">
+            </div>
+            <div class="home-banner__details">
+                <h2 class="h3 home-banner__heading mb-1">{{ section.settings.banner_heading }}</h2>
+                <p class="h4 home-banner__text mb-1">{{ section.settings.banner_text }}</p>
+                <div class="home-banner__cta">
+                    <a class="home-banner__cta-url h4" src="{{ section.settings.banner_cta_url }}" >{{ section.settings.banner_cta }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "t:sections.home-banner.name",
+    "settings":[
+        {
+            "type":"image_picker",
+            "id":"banner_img",
+            "label": "Banner Image"
+        },
+        {
+            "type":"text",
+            "id":"banner_img_alt",
+            "label": "Banner Image Alternative Text"
+        },
+        {
+            "type":"text",
+            "id":"banner_heading",
+            "label": "Banner Heading"
+        },
+        {
+            "type":"text",
+            "id":"banner_text",
+            "label": "Banner Text"
+        },
+        {
+            "type":"text",
+            "id":"banner_cta",
+            "label": "Banner CTA Text"
+        },
+        {
+            "type":"text",
+            "id":"banner_cta_url",
+            "label": "Banner Url"
+        }
+    ]
+}
+{% endschema %}

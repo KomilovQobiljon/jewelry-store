@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "featured-products": {
+      "type": "featured-products",
+      "blocks": {
+        "a95af933-0282-4914-93d1-ef6fe7d56552": {
+          "type": "product",
+          "settings": {
+            "featured-product": "button-ruby"
+          }
+        },
+        "61e59480-fbb8-4a0e-b316-817dc23d4b19": {
+          "type": "product",
+          "settings": {
+            "featured-product": "alla"
+          }
+        },
+        "c378f4df-8d4b-44c8-965c-d73b562b1c1f": {
+          "type": "product",
+          "settings": {
+            "featured-product": "ophelia"
+          }
+        },
+        "7973ace4-5afe-45a3-93c0-4a1a9d3483e3": {
+          "type": "product",
+          "settings": {
+            "featured-product": "medici"
+          }
+        }
+      },
+      "block_order": [
+        "a95af933-0282-4914-93d1-ef6fe7d56552",
+        "61e59480-fbb8-4a0e-b316-817dc23d4b19",
+        "c378f4df-8d4b-44c8-965c-d73b562b1c1f",
+        "7973ace4-5afe-45a3-93c0-4a1a9d3483e3"
+      ],
+      "settings": {
+        "cta_url": "",
+        "cta_text": "shop all"
+      }
+    },
+    "stairs": {
+      "type": "stairs",
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/stairs.png"
+      }
+    },
+    "home-banner": {
+      "type": "home-banner",
+      "settings": {
+        "banner_img_alt": "",
+        "banner_heading": "",
+        "banner_text": "",
+        "banner_cta": "",
+        "banner_cta_url": ""
+      }
+    },
+    "contact-email": {
+      "type": "contact-email",
+      "settings": {
+        "contact_email_heading": "Lorem ipsum dolor sit amet consectetur adipiscing.",
+        "contact_email_img": "shopify:\/\/shop_images\/bg-img-2.png"
+      }
+    }
+  },
+  "order": [
+    "featured-products",
+    "stairs",
+    "home-banner",
+    "contact-email"
+  ]
+}

@@ -1,0 +1,52 @@
+:root{
+    --color-primary-1: #1D1D1D;
+    --color-primary-2: #ffffff;
+    --color-primary-3: #F3E7E0;
+    --color-primary-4: #E8CCBA;
+    --color-secondary-1: #767676;
+    --color-secondary-2: #c4c4c4;
+    --color-secondary-3: #f8f8f8;
+    --color-secondary-4: #F3E7E0;
+    --color-functional-1: #da0000;
+    --color-functional-2: #6fcf97;
+}
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+.container {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.mb-1{
+    margin-bottom: 2.2rem;
+}
+
+@font-face {
+    font-family: 'Minion Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src:  url('font.MinionPro-Regular.woff') format('woff');
+}

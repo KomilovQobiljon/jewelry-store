@@ -1,0 +1,39 @@
+{{ 'style.contact-email.css' | asset_url | stylesheet_tag }}
+
+<div class="contact-email">
+    <div class="contact-email__form">
+        {% form 'customer' %}
+            <div class="email">
+              <label for="email">{{ section.settings.contact_email_heading }}</label>
+              <input type="email" name="contact[email]" placeholder="Enter your email" />
+            </div>
+          
+            <div class="submit">
+              <input type="submit" value="Sign up" />
+            </div>
+          {% endform %}
+    </div>
+</div>
+<style>
+    .contact-email{
+        background-image: url("{{section.settings.contact_email_img.src | img_url: '2880x1360'}}");
+    }
+</style>
+
+{% schema %}
+{
+    "name": "t:sections.contact-email.name",
+    "settings":[
+        {
+            "type":"text",
+            "id":"contact_email_heading",
+            "label": "Contact Eamil Heading"
+        },
+        {
+            "type":"image_picker",
+            "id":"contact_email_img",
+            "label": "Contact Background Image"
+        }
+    ]
+}
+{% endschema %}
